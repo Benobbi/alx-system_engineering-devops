@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -n '' | grep -E '^([^:]*:)?([02468].*)?$' | cut -d ':' -f 2-
+echo "$(tr 'water' '01234' <<< $WATER)+$(tr 'stir.' '01234' <<< $STIR)" | bc | tr '0-9A-P' 'bestchol'
